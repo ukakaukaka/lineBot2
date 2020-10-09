@@ -11,9 +11,9 @@ def index():
     try:
         f = open("student.csv", "r")
         for line in f.readlines():
-#            print(line)
+            print(line)
             a = line.split(",")
-            if(a[0]=="21007"):
+            if(a[0]=="00001"):
                 return a[4]
         f.close()
     except Exception:
